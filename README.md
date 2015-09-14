@@ -1,8 +1,8 @@
 # ICD - 10 Explorer?
-PyGTK application to translate text from the clipboard to Russian with ["yandex.translate"](https://translate.yandex.ru/)  
+PyGTK application to find icd codes in pysql database  
 ## depends:
 
-- requests: dev-python/requests  
+- pysqlite: dev-lang/python +sqlite
 - pygobject: dev-python/pygobject  
 
 
