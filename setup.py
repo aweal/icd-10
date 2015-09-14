@@ -3,7 +3,7 @@
 
 import os
 from setuptools import setup
-import src.translate as translate
+import src.icd as icd
 
 PACKAGE = "icd-10"
 NAME = "ICD-ten"
@@ -12,7 +12,7 @@ AUTHOR = "aweal"
 AUTHOR_EMAIL = "gaweal@gmail.com"
 URL = "github.com/aweal/icd-10"
 
-VERSION = translate.__version__
+VERSION = icd.__version__
 
 
 def read(fname):
@@ -37,7 +37,7 @@ setup(
     ],
 
     entry_points={'gui_scripts': [
-        'icd-ten = translate.application:run',
+        'icd-ten = icd.application:run',
     ]},
 
     classifiers=[
